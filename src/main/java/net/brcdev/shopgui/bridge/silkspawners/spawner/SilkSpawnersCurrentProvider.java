@@ -34,8 +34,10 @@ public class SilkSpawnersCurrentProvider implements SilkSpawnersProvider {
     String entityTypeName = this.entityTypesMap.containsKey(entityType) ? this.entityTypesMap.get(entityType) :
       entityType.name().toLowerCase();
     try {
+      Method customNameMethod = SilkUtil.class.getMethod("getCustomSpawnerName", String.class);
+      String customName = (String) customNameMethod.invoke(this.silkUtil, entityTypeName);
       Method method = SilkUtil.class.getMethod("newSpawnerItem", String.class, String.class, int.class, boolean.class);
-      itemStack = (ItemStack) method.invoke(this.silkUtil, entityTypeName, null, 1, false);
+      itemStack = (ItemStack) method.invoke(this.silkUtil, entityTypeName, customName, 1, false);
     } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
       e.printStackTrace();
     }
