@@ -19,7 +19,8 @@ public enum NmsVersion {
   v1_17,
   v1_18,
   v1_19,
-  v1_20;
+  v1_20,
+  v1_21;
 
   private static final Pattern ONE_POINT_VERSION_NUMBER_PATTERN = Pattern.compile("v\\d_(\\d+)");
 
