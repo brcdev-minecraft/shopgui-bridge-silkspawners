@@ -22,12 +22,6 @@ public class NmsUtils {
     return !isNmsVersionAtLeast(maximalNmsVersion);
   }
 
-  public static boolean isNmsReleaseVersionAtLeast(int requiredNmsReleaseVersion) {
-    int currentReleaseVersion = readNmsReleaseVersion();
-
-    return currentReleaseVersion >= requiredNmsReleaseVersion;
-  }
-
   private static NmsVersion readNmsVersion() {
     NmsVersion version = null;
 
@@ -38,6 +32,9 @@ public class NmsUtils {
       switch (minecraftVersion) {
         case "1.20.6":
           version = parseShortNmsVersion("v1_20");
+          break;
+        case "1.21":
+          version = parseShortNmsVersion("v1_21");
           break;
       }
     } catch (ReflectiveOperationException e) {
@@ -63,6 +60,9 @@ public class NmsUtils {
       switch (minecraftVersion) {
         case "1.20.6":
           version = 4; // v1_20_R4
+          break;
+        case "1.21":
+          version = 1; // v1_21_R1
           break;
       }
     } catch (ReflectiveOperationException e) {
