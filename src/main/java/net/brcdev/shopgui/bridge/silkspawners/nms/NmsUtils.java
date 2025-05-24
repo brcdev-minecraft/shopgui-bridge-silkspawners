@@ -38,6 +38,7 @@ public class NmsUtils {
         case "1.21.2":
         case "1.21.3":
         case "1.21.4":
+        case "1.21.5":
           version = parseShortNmsVersion("v1_21");
           break;
       }
