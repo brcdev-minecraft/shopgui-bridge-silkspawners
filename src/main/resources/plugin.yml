@@ -1,5 +1,5 @@
 name: ShopGUIPlusSilkSpawnersBridge
-version: 1.8.0
+version: 1.9.0
 main: net.brcdev.shopgui.bridge.silkspawners.ShopGuiBridgeSilkSpawnersPlugin
 author: brc
 depend: [ShopGUIPlus, SilkSpawners]
