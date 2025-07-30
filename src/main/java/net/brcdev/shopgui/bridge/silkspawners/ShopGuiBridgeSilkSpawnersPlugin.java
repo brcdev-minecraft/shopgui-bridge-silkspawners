@@ -1,14 +1,14 @@
 package net.brcdev.shopgui.bridge.silkspawners;
 
+import me.nahu.scheduler.wrapper.FoliaWrappedJavaPlugin;
 import net.brcdev.shopgui.ShopGuiPlusApi;
 import net.brcdev.shopgui.bridge.silkspawners.spawner.SilkSpawnersLegacyProvider;
 import net.brcdev.shopgui.bridge.silkspawners.spawner.SilkSpawnersCurrentProvider;
 import net.brcdev.shopgui.bridge.silkspawners.spawner.SilkSpawnersProvider;
 import net.brcdev.shopgui.exception.api.ExternalSpawnerProviderNameConflictException;
 import org.bukkit.Bukkit;
-import org.bukkit.plugin.java.JavaPlugin;
 
-public class ShopGuiBridgeSilkSpawnersPlugin extends JavaPlugin {
+public class ShopGuiBridgeSilkSpawnersPlugin extends FoliaWrappedJavaPlugin {
 
   private SilkSpawnersProvider spawnerProvider;
 
