@@ -4,5 +4,4 @@ main: net.brcdev.shopgui.bridge.silkspawners.ShopGuiBridgeSilkSpawnersPlugin
 author: brc
 depend: [ShopGUIPlus, SilkSpawners]
 api-version: 1.13
-
 folia-supported: true
