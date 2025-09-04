@@ -34,7 +34,7 @@
                     <createDependencyReducedPom>false</createDependencyReducedPom>
                     <artifactSet>
                         <includes>
-                            <include>com.github.NahuLD.folia-scheduler-wrapper:*</include>
+                            <include>com.tcoded:FoliaLib</include>
                         </includes>
                     </artifactSet>
                 </configuration>
@@ -67,6 +67,10 @@
             <id>jitpack.io</id>
             <url>https://jitpack.io</url>
         </repository>
+        <repository>
+            <id>tcoded-releases</id>
+            <url>https://repo.tcoded.com/releases</url>
+        </repository>
     </repositories>
 
     <dependencies>
@@ -77,6 +81,12 @@
             <type>jar</type>
         </dependency>
         <dependency>
+            <groupId>com.tcoded</groupId>
+            <artifactId>FoliaLib</artifactId>
+            <version>0.5.1</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
             <groupId>com.github.brcdev-minecraft</groupId>
             <artifactId>shopgui-api</artifactId>
             <version>3.1.0</version>
@@ -85,11 +95,6 @@
             <groupId>de.dustplanet</groupId>
             <artifactId>SilkSpawners</artifactId>
             <version>8.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.github.NahuLD</groupId>
-            <artifactId>folia-scheduler-wrapper</artifactId>
-            <version>v0.0.3</version>
         </dependency>
     </dependencies>
 </project>
