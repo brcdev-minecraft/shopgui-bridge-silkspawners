@@ -37,6 +37,12 @@
                             <include>com.tcoded:FoliaLib</include>
                         </includes>
                     </artifactSet>
+                    <relocations>
+                        <relocation>
+                            <pattern>com.tcoded.folialib</pattern>
+                            <shadedPattern>net.brcdev.shopguiplus.silkspawnersbridge.libs.folialib</shadedPattern>
+                        </relocation>
+                    </relocations>
                 </configuration>
                 <executions>
                     <execution>
