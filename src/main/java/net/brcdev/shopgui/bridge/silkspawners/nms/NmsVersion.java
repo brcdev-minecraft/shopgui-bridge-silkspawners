@@ -32,6 +32,6 @@ public enum NmsVersion {
       throw new UnsupportedMinecraftVersionException();
     }
 
-    return Integer.valueOf(matcher.group(1));
+    return Integer.parseInt(matcher.group(1));
   }
 }

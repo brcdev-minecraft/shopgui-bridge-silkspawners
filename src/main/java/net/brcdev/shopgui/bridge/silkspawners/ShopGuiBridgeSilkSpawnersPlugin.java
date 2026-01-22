@@ -27,4 +27,3 @@ public class ShopGuiBridgeSilkSpawnersPlugin extends JavaPlugin {
     }
   }
 }
-
