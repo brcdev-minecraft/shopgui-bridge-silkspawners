@@ -40,7 +40,10 @@ public class NmsUtils {
              "1.21.5",
              "1.21.6",
              "1.21.7",
-             "1.21.8" -> version = parseShortNmsVersion("v1_21");
+             "1.21.8",
+             "1.21.9",
+             "1.21.10",
+             "1.21.11" -> version = parseShortNmsVersion("v1_21");
       }
     } catch (ReflectiveOperationException e) {
       // Not Paper or older than 1.16.5 where the method was added
