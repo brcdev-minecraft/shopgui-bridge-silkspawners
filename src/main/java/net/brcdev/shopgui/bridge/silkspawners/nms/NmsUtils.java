@@ -31,19 +31,23 @@ public class NmsUtils {
       String minecraftVersion = getPaperMinecraftVersion();
 
       switch (minecraftVersion) {
-        case "1.20.6" -> version = parseShortNmsVersion("v1_20");
-        case "1.21",
-             "1.21.1",
-             "1.21.2",
-             "1.21.3",
-             "1.21.4",
-             "1.21.5",
-             "1.21.6",
-             "1.21.7",
-             "1.21.8",
-             "1.21.9",
-             "1.21.10",
-             "1.21.11" -> version = parseShortNmsVersion("v1_21");
+        case "1.20.6":
+          version = parseShortNmsVersion("v1_20");
+          break;
+        case "1.21":
+        case "1.21.1":
+        case "1.21.2":
+        case "1.21.3":
+        case "1.21.4":
+        case "1.21.5":
+        case "1.21.6":
+        case "1.21.7":
+        case "1.21.8":
+        case "1.21.9":
+        case "1.21.10":
+        case "1.21.11":
+          version = parseShortNmsVersion("v1_21");
+          break;
       }
     } catch (ReflectiveOperationException e) {
       // Not Paper or older than 1.16.5 where the method was added
